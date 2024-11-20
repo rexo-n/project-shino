@@ -1,7 +1,6 @@
 db-sqlite3
 datetime
 meta_ai_api
-threading
 colorama
 re
 os
