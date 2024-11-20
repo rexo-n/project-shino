@@ -230,7 +230,24 @@ def process_query(query):
 # === User Input === #
 def user_input():
     """Handle user input and pass it to Shino."""
-    print(Fore.CYAN + "Shino: Hey there Rex, how are you doing, love? 💖")
+    
+    # Check if Shino is running for the first time
+    if not os.path.exists('initialized'):
+        # Ask for the user's name
+        print(Fore.CYAN + "Shino: Hey there! It looks like this is my first time meeting you. 😊 What's your name?")
+        user_name = input("> ").strip()
+        
+        # Save the name for future use
+        print(f"Nice to meet you, {user_name}! 💖")
+        with open('initialized', 'w') as f:
+            f.write('This is Shino’s first-time initialization.\n')
+        
+        # Greet the user with their name
+        print(Fore.CYAN + f"Shino: I’m so happy to meet you, {user_name}! Let’s have some fun together! 😄")
+    else:
+        # If not the first time, just greet the user normally
+        print(Fore.CYAN + "Shino: Welcome back, love! 💖")
+
     while True:
         query = input("> ").strip().lower()
         if query in ["exit", "quit", "bye"]:
@@ -250,7 +267,6 @@ def user_input():
             print(browse_web(search_query))
         else:
             print(process_query(query))
-
 # Initialize everything
 init_db()
 user_input()
