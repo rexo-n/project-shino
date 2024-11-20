@@ -2,5 +2,3 @@ db-sqlite3
 datetime
 meta_ai_api
 colorama
-edge-tts
-playsound
