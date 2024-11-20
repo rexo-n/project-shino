@@ -4,11 +4,17 @@ A cheerful and dynamic AI companion who combines functionality with charm! Shino
 
 ## Features ✨
 🌟 AI-Driven Conversations: Engages in meaningful interactions with memory-based context.
+
 📂 File Search: Finds and opens files or folders on your system.
-🖥️ Application Launch: Quickly opens apps like Chrome, Word, and even Valorant.
+
+🖥️ Application Launch: Quickly opens apps like Chrome, Word etc etc and those can be customized too.
+
 🎥 YouTube Search: Finds videos or opens YouTube directly.
+
 🔍 Web Browsing: Performs Google searches from your input.
+
 🗣️ Text-to-Speech: Shino speaks using Edge TTS for a natural feel.
+
 ### Getting Started 🚀
 Prerequisites
 Python 3.8+
