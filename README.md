@@ -13,8 +13,6 @@ A cheerful and dynamic AI companion who combines functionality with charm! Shino
 
 🔍 Web Browsing: Performs Google searches from your input.
 
-🗣️ Text-to-Speech: Shino speaks using Edge TTS for a natural feel.
-
 ### Getting Started 🚀
 Prerequisites
 Python 3.8+
